@@ -1,0 +1,7 @@
+<h1>Flickr photo search</h1>
+
+<input type="text"  [(ngModel)]="searchStr" [ngFormControl]="searchCtrl" ><button (click)="searchPhoto()">Search</button>'
+
+<div *ngFor="#photo of photos">
+    <img src="{{photo.getUrl}}" >   
+</div>
